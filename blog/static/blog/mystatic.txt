@@ -6,10 +6,3 @@ include is used to include other app urls of in the main project
 Templates folder in apps is useful to use templates (this folder will have another directory name same as the app)
 same with static folder in every app (Static folder will contain all the files and images)
 Also add the apps created in the settings folder
-python manage.py migrate -> command is used to create the tables/models for applications we are having.
-We create a class when we declare a model in django.
-We can reove INSTALLED_APPS from settings and replace them => 'shop' -> 'shop.apps.ShopConfig'
-create superuser to manage your project backends -> python manage.py createsuperuser
-We need to register the models to view them in the admin panel, For Ex:
-    from .models import Product
-    admin.site.register(Product)
